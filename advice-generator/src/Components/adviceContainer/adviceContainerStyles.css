@@ -1,0 +1,53 @@
+.advice-container {
+    display: block;
+    margin-bottom: 2rem;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 3%;
+    align-self: center;
+  }
+
+/* On mobile devices */
+@media screen and (max-width: 600px) {
+    .divider-mobile {
+        display: flex !important;
+        width: 100%;
+        justify-content: center
+    };
+    .divider-desktop {
+        display: none !important;
+    };
+}
+
+/* On tablet & desktop */
+@media screen and (min-width: 601px) {
+    .divider-mobile {
+        display: none !important;
+    };
+    .divider-desktop {
+        display: flex !important;
+        width: 100%;
+        justify-content: center;
+    };
+}
+
+#mobile {
+    flex-shrink: 1;
+}
+.diceSplitColor {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.diceIcon {
+    display: inline-flex;
+    margin: 1rem;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
